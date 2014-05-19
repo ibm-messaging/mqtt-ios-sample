@@ -29,9 +29,6 @@
 		96BBA9FE185E517600DEE145 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BBA9F3185E517600DEE145 /* PublishViewController.m */; };
 		96BBA9FF185E517600DEE145 /* SubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BBA9F5185E517600DEE145 /* SubscribeViewController.m */; };
 		96BBAA00185E517600DEE145 /* Subscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BBA9F7185E517600DEE145 /* Subscription.m */; };
-		96BBABDB185E518B00DEE145 /* glyphicons_003_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BBAA05185E518900DEE145 /* glyphicons_003_user.png */; };
-		96BBACAC185E518B00DEE145 /* glyphicons_212_down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BBAAD6185E518900DEE145 /* glyphicons_212_down_arrow.png */; };
-		96BBACAD185E518B00DEE145 /* glyphicons_213_up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BBAAD7185E518900DEE145 /* glyphicons_213_up_arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +77,6 @@
 		96BBA9F5185E517600DEE145 /* SubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeViewController.m; sourceTree = "<group>"; };
 		96BBA9F6185E517600DEE145 /* Subscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subscription.h; sourceTree = "<group>"; };
 		96BBA9F7185E517600DEE145 /* Subscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subscription.m; sourceTree = "<group>"; };
-		96BBAA05185E518900DEE145 /* glyphicons_003_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_003_user.png; sourceTree = "<group>"; };
-		96BBAAD6185E518900DEE145 /* glyphicons_212_down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_212_down_arrow.png; sourceTree = "<group>"; };
-		96BBAAD7185E518900DEE145 /* glyphicons_213_up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_213_up_arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +143,6 @@
 				96BBA9C7185E510A00DEE145 /* AppDelegate.m */,
 				96BBA9E8185E517600DEE145 /* ConnectViewController.h */,
 				96BBA9E9185E517600DEE145 /* ConnectViewController.m */,
-				96BBAA01185E518900DEE145 /* icons */,
 				96BBA9C9185E510A00DEE145 /* Images.xcassets */,
 				96BBA9EA185E517600DEE145 /* LogMessage.h */,
 				96BBA9EB185E517600DEE145 /* LogMessage.m */,
@@ -198,16 +191,6 @@
 				96BBA9D9185E510A00DEE145 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		96BBAA01185E518900DEE145 /* icons */ = {
-			isa = PBXGroup;
-			children = (
-				96BBAA05185E518900DEE145 /* glyphicons_003_user.png */,
-				96BBAAD6185E518900DEE145 /* glyphicons_212_down_arrow.png */,
-				96BBAAD7185E518900DEE145 /* glyphicons_213_up_arrow.png */,
-			);
-			path = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,11 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BBA9C2185E510900DEE145 /* InfoPlist.strings in Resources */,
-				96BBACAD185E518B00DEE145 /* glyphicons_213_up_arrow.png in Resources */,
-				96BBABDB185E518B00DEE145 /* glyphicons_003_user.png in Resources */,
 				96BBA9CA185E510A00DEE145 /* Images.xcassets in Resources */,
 				96385B9B185E54ED001A8C0B /* Main.storyboard in Resources */,
-				96BBACAC185E518B00DEE145 /* glyphicons_212_down_arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
