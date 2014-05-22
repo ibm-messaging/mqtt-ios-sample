@@ -41,6 +41,27 @@
 }
 @end
 
+// Disconnect Callbacks
+@interface DisconnectCallbacks : NSObject <InvocationComplete>
+- (void) onSuccess:(NSObject*) invocationContext;
+- (void) onFailure:(NSObject*) invocationContext errorCode:(int) errorCode errorMessage:(NSString*) errorMessage;
+@end
+@implementation DisconnectCallbacks
+- (void) onSuccess:(NSObject*) invocationContext
+{
+    NSLog(@"%s:%d - invocationContext=%@", __func__, __LINE__, invocationContext);
+    [[Messenger sharedMessenger] addLogMessage:@"Disconnected from server!" type:@"Action"];
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    [appDelegate updateConnectButton];
+}
+- (void) onFailure:(NSObject*) invocationContext errorCode:(int) errorCode errorMessage:(NSString*) errorMessage
+{
+    NSLog(@"%s:%d - invocationContext=%@  errorCode=%d  errorMessage=%@", __func__,
+          __LINE__, invocationContext, errorCode, errorMessage);
+    [[Messenger sharedMessenger] addLogMessage:@"Failed to disconnect!" type:@"Action"];
+}
+@end
+
 // Publish Callbacks
 @interface PublishCallbacks : NSObject <InvocationComplete>
 - (void) onSuccess:(NSObject*) invocationContext;
@@ -173,7 +194,7 @@
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     [appDelegate reloadSubscriptionList];
     
-    [client disconnectWithOptions:opts invocationContext:self onCompletion:[[ConnectCallbacks alloc] init]];
+    [client disconnectWithOptions:opts invocationContext:self onCompletion:[[DisconnectCallbacks alloc] init]];
 }
 
 - (void)publish:(NSString *)topic payload:(NSString *)payload qos:(int)qos retained:(BOOL)retained
