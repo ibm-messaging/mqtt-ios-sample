@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		27AA74E319266A2500920632 /* libiosMQTT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AA74E119266A2500920632 /* libiosMQTT.a */; };
+		27B4374D19B8ACC80063DA5A /* glyphicons_003_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B4374919B8ACC80063DA5A /* glyphicons_003_user.png */; };
+		27B4374E19B8ACC80063DA5A /* glyphicons_030_pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B4374A19B8ACC80063DA5A /* glyphicons_030_pencil.png */; };
+		27B4374F19B8ACC80063DA5A /* glyphicons_212_down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B4374B19B8ACC80063DA5A /* glyphicons_212_down_arrow.png */; };
+		27B4375019B8ACC80063DA5A /* glyphicons_213_up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B4374C19B8ACC80063DA5A /* glyphicons_213_up_arrow.png */; };
 		96385B9B185E54ED001A8C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96385B9A185E54ED001A8C0B /* Main.storyboard */; };
 		96BBA9B8185E510900DEE145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BBA9B7185E510900DEE145 /* Foundation.framework */; };
 		96BBA9BA185E510900DEE145 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BBA9B9185E510900DEE145 /* CoreGraphics.framework */; };
@@ -44,6 +48,10 @@
 /* Begin PBXFileReference section */
 		27AA74E119266A2500920632 /* libiosMQTT.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiosMQTT.a; path = ../libiosMQTT.a; sourceTree = "<group>"; };
 		27AA74E219266A2500920632 /* MqttOCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MqttOCClient.h; path = ../MqttOCClient.h; sourceTree = "<group>"; };
+		27B4374919B8ACC80063DA5A /* glyphicons_003_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_003_user.png; sourceTree = "<group>"; };
+		27B4374A19B8ACC80063DA5A /* glyphicons_030_pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_030_pencil.png; sourceTree = "<group>"; };
+		27B4374B19B8ACC80063DA5A /* glyphicons_212_down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_212_down_arrow.png; sourceTree = "<group>"; };
+		27B4374C19B8ACC80063DA5A /* glyphicons_213_up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_213_up_arrow.png; sourceTree = "<group>"; };
 		96385B9A185E54ED001A8C0B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		96BBA9B4185E510900DEE145 /* iOS-MQTT-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MQTT-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BBA9B7185E510900DEE145 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27B4374819B8ACC80063DA5A /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				27B4374919B8ACC80063DA5A /* glyphicons_003_user.png */,
+				27B4374A19B8ACC80063DA5A /* glyphicons_030_pencil.png */,
+				27B4374B19B8ACC80063DA5A /* glyphicons_212_down_arrow.png */,
+				27B4374C19B8ACC80063DA5A /* glyphicons_213_up_arrow.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
 		96BBA9AB185E510900DEE145 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +158,7 @@
 		96BBA9BD185E510900DEE145 /* iOS-MQTT-Client */ = {
 			isa = PBXGroup;
 			children = (
+				27B4374819B8ACC80063DA5A /* icons */,
 				96BBA9C6185E510A00DEE145 /* AppDelegate.h */,
 				96BBA9C7185E510A00DEE145 /* AppDelegate.m */,
 				96BBA9E8185E517600DEE145 /* ConnectViewController.h */,
@@ -269,7 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BBA9C2185E510900DEE145 /* InfoPlist.strings in Resources */,
+				27B4374E19B8ACC80063DA5A /* glyphicons_030_pencil.png in Resources */,
 				96BBA9CA185E510A00DEE145 /* Images.xcassets in Resources */,
+				27B4374F19B8ACC80063DA5A /* glyphicons_212_down_arrow.png in Resources */,
+				27B4375019B8ACC80063DA5A /* glyphicons_213_up_arrow.png in Resources */,
+				27B4374D19B8ACC80063DA5A /* glyphicons_003_user.png in Resources */,
 				96385B9B185E54ED001A8C0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
