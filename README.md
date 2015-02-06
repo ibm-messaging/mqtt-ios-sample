@@ -1,11 +1,11 @@
 mqtt-ios-sample
 ===============
-Sample iOS app using MQTT
+MQTT iOS Sample is an application that provides a user the ability to publish and subscribe to MQTT topics from their iOS device.
 
-This project depends on the iOS MQTT Client library included in the Mobile Messaging and M2M Client Pack. 
-Add the header file and library to the project (libiosMQTT.a and MqttOCClient.h) and update Library Search Paths and Header Search Paths properties of the project as necessary.
-
-This sample provides the user with the ability to publish and subscribe to MQTT topics from their iOS device. There are four views to the application.
+This project depends on the iOS MQTT Client library included in the [IBM WebSphere Mobile Messaging and M2M Client Pack](https://www.ibm.com/developerworks/community/blogs/c565c720-fe84-4f63-873f-607d87787327/entry/download?lang=en). 
+Setup
+-----
+After downloading the client pack from the link above, unzip it and go to `SDK/clients/iOS/` and copy `libiosMQTT.a` and `MqttOCClient.h` into your XCode project. Once the files have been added to the project, ensure that they are included in the `Library Search Paths` and `Header Search Paths` properties of the project. These properties can be found by selecting the project in XCode and going to `Build Settings`.
 
 Connect
 -------
